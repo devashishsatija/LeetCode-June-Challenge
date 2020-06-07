@@ -1,0 +1,20 @@
+//Deleting a node without using head pointer
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public void deleteNode(ListNode node) {
+     
+        //copy data from node next to node
+        node.val =node.next.val;
+        node.next = node.next.next;
+        
+    }
+}
+
